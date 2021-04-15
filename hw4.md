@@ -35,9 +35,9 @@ Git 有兩個重要的用途，一個是版本控制，另一個是團隊的多�
 
 #### 那麼我想回到舊的版本怎麼辦
 
-1. git log --oneline，顯是精簡的 git log
-2. 每一個 commit 之後都有一個獨立的 git hash，複製起來
-3. 輸入 checkout {笑話版本1 git-hash}
+1. `git log --oneline`，列出精簡的 git log
+2. 每一個 commit 之後都有一個獨立的 git hash，將他複製起來
+3. 輸入 `checkout {笑話版本1 git-hash}`，貼上剛剛 git hash 在 checkout 之後
 4. 我們就從笑話版本3切換到笑話版本1
 
 ![joke3](https://i.imgur.com/jKXbrmv.jpg)
