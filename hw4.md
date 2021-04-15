@@ -6,8 +6,8 @@ Git 有兩個重要的用途，一個是版本控制，另一個是團隊的多�
 
 如下圖所示，這些檔案可能每天都在新增修改，原本3個檔案，過了1天增加2個修改1個，在過2天增加5個修改3個，你可能覺得幾天前的笑話比較好，想改回來時，這時你就不得不做備份，但是總不能每次修改就做一次備份，這樣檔案不僅多且不好管理，沒有辦法很快確認這些檔案修改了什麼，更別說忘記備份或不小心覆蓋，透過版本控制，系統化的管理，清楚的紀錄每個檔案是誰在什麼時間做了修改、新增、刪除，還能返回過去修改的內容，就像遊戲存檔一樣，可以載入舊進度重新過關。
 
-![joke1](https://imgur.com/kK3lJ4E)
-<div class="mermaid">
+![joke1](https://i.imgur.com/kK3lJ4E.jpg)
+<div class="mermaid" style="display: none">
     graph LR
     c_1(版本1 共3個檔案)-- 過了1天 ---c_2(版本2 共5個笑話)-- 過了2天 --- C_3(版本3 10個笑話) -- 過了7天 --- c_4(版本4 20個笑話)
 </div>
@@ -25,8 +25,8 @@ Git 有兩個重要的用途，一個是版本控制，另一個是團隊的多�
 
 <p>假設我們 commit 到版本3，圖解可以想像成下圖</p>
 
-![joke2](https://imgur.com/0u0WpRM)
-<div class="mermaid">
+![joke2](https://i.imgur.com/0u0WpRM.jpg)
+<div class="mermaid" style="display: none">
     graph LR
     j_1(笑話 版本1) --過了1天---> j_2(笑話 版本2) --過了2天---> j_3(笑話版本 3):::joke
 
@@ -40,8 +40,8 @@ Git 有兩個重要的用途，一個是版本控制，另一個是團隊的多�
 3. 輸入 checkout {笑話版本1 git-hash}
 4. 我們就從笑話版本3切換到笑話版本1
 
-![joke3](https://imgur.com/jKXbrmv)
-<div class="mermaid">
+![joke3](https://i.imgur.com/jKXbrmv.jpg)
+<div class="mermaid" style="display:none">
     graph LR
     j_1(笑話 版本1):::joke ---> j_2(笑話 版本2) ---> j_3(笑話版本 3) -- checkout ---> j_1
 
